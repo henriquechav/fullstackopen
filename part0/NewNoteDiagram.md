@@ -10,10 +10,8 @@ sequenceDiagram
     Note right of Browser: User clicks to submit data.
 
     Browser->>Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
-
-    Note left of Server: Server adds the data sent to the database/array.
-
     activate Server
+    Note left of Server: Server adds the data sent to the database/array.
     Server-->>Browser: Status 302 - URL redirect to /notes
     deactivate Server
 
